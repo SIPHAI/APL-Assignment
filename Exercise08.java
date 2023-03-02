@@ -1,17 +1,18 @@
 import java.util.Scanner;
 
 public class Exercise08 {
-    
+    //set the size of input password
 public static final int PASSWORD_LENGTH = 8;
 
-public static void main(String[] args) {
+   public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
         System.out.print(
                 // "1.Enter your password:\n" +
-                // "1. A password must have at least eight characters.\n" +
-                // "2. A password consists of only letters and digits.\n" +
-                // "3. A password must contain at least two digits \n" +
+                "A password must have exactly 8 characters.\n" +
+                "A password must consist of only digits and letters.\n" +
+                "A password must always start with a digit.\n" +
+                "A password must contain at least one uppercase letter. \n" +
                 "Input a password : ");
         String s = input.nextLine();
 
@@ -50,7 +51,7 @@ public static void main(String[] args) {
 
     public static boolean is_Numeric(char ch) {
 
-        return (ch >= '0' && ch <= '9');
+        return (ch >= '0' && ch <= '8');
     }
 
 }
