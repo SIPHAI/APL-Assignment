@@ -3,8 +3,8 @@
 // Without using sort() method
 
 // Importing required classes
-import java.io.*;
-import java.util.Arrays;
+// import java.io.*;
+// import java.util.Arrays;
 import java.util.Scanner;
 
 // Main class
@@ -34,7 +34,7 @@ class Exercise4 {
 				j += 1;
 			}
 			i += 1;
-		}
+		}//call String
         String output =String.valueOf(arr);  
 		// By now loop is done means we have
 		// iterated the whole array

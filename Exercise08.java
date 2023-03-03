@@ -6,20 +6,21 @@ public static final int PASSWORD_LENGTH = 8;
 
    public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        System.out.print(
-                // "1.Enter your password:\n" +
-                "A password must have exactly 8 characters.\n" +
-                "A password must consist of only digits and letters.\n" +
-                "A password must always start with a digit.\n" +
-                "A password must contain at least one uppercase letter. \n" +
-                "Input a password : ");
-        String s = input.nextLine();
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.print(
+                    // "1.Enter your password:\n" +
+                    "A password must have exactly 8 characters.\n" +
+                    "A password must consist of only digits and letters.\n" +
+                    "A password must always start with a digit.\n" +
+                    "A password must contain at least one uppercase letter. \n" +
+                    "Input a password : ");
+            String s = input.nextLine();
 
-        if (is_Valid_Password(s)) {
-            System.out.println("Password is valid: " + s);
-        } else {
-            System.out.println("Not a valid password: " + s.toUpperCase());
+            if (is_Valid_Password(s)) {
+                System.out.println("Password is valid: " + s);
+            } else {
+                System.out.println("Not a valid password: " + s.toUpperCase());
+            }
         }
 
     }
@@ -33,7 +34,7 @@ public static final int PASSWORD_LENGTH = 8;
         for (int i = 0; i < password.length(); i++) {
 
             char ch = password.charAt(i);
-
+            
             if (is_Numeric(ch)) numCount++;
             else if (is_Letter(ch)) charCount++;
             else return false;
