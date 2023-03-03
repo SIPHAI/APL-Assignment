@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 // Main class
-class Exersice04 {
+class Exercise04 {
 
     public static String sort (String s ){
 	

@@ -23,7 +23,7 @@ public static final int PASSWORD_LENGTH = 8;
         }
 
     }
-
+//for the valid passwords within the counting and num count
     public static boolean is_Valid_Password(String password) {
 
         if (password.length() < PASSWORD_LENGTH) return false;
@@ -43,15 +43,17 @@ public static final int PASSWORD_LENGTH = 8;
         return (charCount >= 2 && numCount >= 2);
     }
 
+    //for uppercase Cha at least one.
+
     public static boolean is_Letter(char ch) {
         ch = Character.toUpperCase(ch);
         return (ch >= 'A' && ch <= 'Z');
     }
 
-
+    //This is for counting the number from o to 9 is it the numberic or not?
     public static boolean is_Numeric(char ch) {
 
-        return (ch >= '0' && ch <= '8');
+        return (ch >= '0' && ch <= '9');
     }
 
 }
