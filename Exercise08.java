@@ -8,7 +8,6 @@ public static final int PASSWORD_LENGTH = 8;
 
         try (Scanner input = new Scanner(System.in)) {
             System.out.print(
-                    // "1.Enter your password:\n" +
                     "A password must have exactly 8 characters.\n" +
                     "A password must consist of only digits and letters.\n" +
                     "A password must always start with a digit.\n" +
@@ -51,7 +50,7 @@ public static final int PASSWORD_LENGTH = 8;
         return (ch >= 'A' && ch <= 'Z');
     }
 
-    //This is for counting the number from o to 9 is it the numberic or not?
+    //This is for counting the number from o to 9 is it the numeric or not?
     public static boolean is_Numeric(char ch) {
 
         return (ch >= '0' && ch <= '9');
