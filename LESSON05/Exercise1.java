@@ -13,7 +13,6 @@ public class Exercise1 {
         System.out.println(arraylist);
         removeInt(5,arraylist);
         System.out.println(arraylist);
-
     }
 
 
